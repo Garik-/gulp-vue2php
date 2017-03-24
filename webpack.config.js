@@ -4,7 +4,12 @@ var webpack = require('webpack'),
 module.exports = {
     'context': __dirname,
     'entry': {
-        'index': path.resolve(__dirname, './src/index.js'),
+        'gulp-vue2php': path.resolve(__dirname, './src/index.js'),
+    },
+    'resolve': {
+        'alias': {
+            Vue: path.resolve(__dirname, './src/vue/')
+        }
     },
     'output': {
         path: path.resolve(__dirname, "./dist"),
@@ -13,16 +18,14 @@ module.exports = {
         libraryTarget: 'umd'
     },
     'module': {
-        rules: [
-            {
-                'use': ["babel-loader","eslint-loader"],
-                'test': /\.js$/,
-                'exclude': /node_modules/
-            }
-        ]
+        rules: [{
+            'use': ["babel-loader", "eslint-loader"],
+            'test': /\.js$/,
+            'exclude': /node_modules/
+        }]
     },
     'plugins': [
         new webpack.optimize.OccurrenceOrderPlugin,
-        new webpack.optimize.UglifyJsPlugin
+        //new webpack.optimize.UglifyJsPlugin
     ]
 };

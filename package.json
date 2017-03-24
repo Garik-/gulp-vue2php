@@ -1,22 +1,22 @@
 {
-  "name": "template-project.js",
+  "name": "gulp-vue2php",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "flow check"
+    "test": "node ./dist/gulp-vue2.php.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Garik-/template-project.js.git"
+    "url": "git://github.com/Garik-/gulp-vue2php.git"
   },
-  "keywords": [],
+  "keywords": ["gulp","vue","plugin"],
   "author": "Gar|k",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Garik-/template-project.js/issues"
+    "url": "https://github.com/Garik-/gulp-vue2php/issues"
   },
-  "homepage": "https://github.com/Garik-/template-project.js#readme",
+  "homepage": "https://github.com/Garik-/gulp-vue2php#readme",
   "devDependencies": {
     "babel-core": "^6.9.0",
     "babel-eslint": "^7.1.0",
