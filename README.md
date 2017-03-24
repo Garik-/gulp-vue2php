@@ -5,8 +5,7 @@
 ```BASH
 $ git clone https://github.com/Garik-/template-project.js.git project
 $ cd project
-~/project/ $ git remote remove origin
-~/project/ $ npm i
+~/project/ $ git remote remove origin; npm i
 ~/project/ $ webpack --watch
 ```
 
